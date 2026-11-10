@@ -75,6 +75,20 @@ M = merge commit.
 Hash =  es un identificador único que se le asigna a cada confirmación (commit) o cambio guardado en el repositorio
 
 .gitignore = "Estos archivos/carpetas existen en mi computadora, pero NO quiero subirlos al repositorio."
+-------------New-Item .gitignore -ItemType File  -----          
+-------------notepad .gitignore
+------------------- __pycache__/
+                    *.pyc
+                    .venv/
+                    venv/
+                    .env
+----------------------------- abre bloc de notas para poner la regla 
+
+
+
+
+
+
 
 
 

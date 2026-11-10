@@ -7,6 +7,13 @@ Un remote es básicamente una referencia que le dice a tu repositorio local:
 
 git remote add origin URL = “Git, guarda que existe un repositorio remoto llamado origin y que está en esta dirección.” 
 
+git remote -v =  -v Significa verbose = mostrar información más detallada.
+-----
+git
+Le dices a Git que vas a ejecutar un comando.
+remote
+Significa remoto. Trabaja con los repositorios externos conectados a tu repositorio local.
+-----
 PUSH***
 
 git push origin master = “Envía los commits de mi rama local master al repositorio remoto identificado como origin.”
@@ -88,8 +95,63 @@ la ruta exacta de la raíz de tu repositorio Git. ***
 ***Get-ChildItem -Force = Muestra todos los archivos y carpetas.
    Ese d--h-- significa que .git es una carpeta oculta (d = directory, h = hidden).
 
-*** Move-Item .git ..\..\ = Mueve la carpeta .git dos niveles hacia arriba.
+*** Move-Item .git ..\.\ = Mueve la carpeta .git dos niveles hacia arriba.
 
+*** git diff --cached --stat =  Ese comando no modifica nada. Solo nos muestra un resumen de lo que está preparado en staging. 
+
+
+*** mkdir  = mkdir viene de make directory:
+
+        mkdir Git-Prueba - 
+
+*** cd ..\..\AI-Engineer-Bootcamp
+        subimos:
+            1. .. → Git-Prueba
+            2. .. → Desktop
+            3. AI-Engineer-Bootcamp → repositorio original
+           
+***pwd = confirma el camino donde estamos 
+
+***New-Item README.md -ItemType File = crea nevo noead readme 
+
+*** git diff muestra los cambios que tienes en tu working tree y que todavía NO están en staging.
+
+*** git diff --cached
+        ↓
+Cambios que YA están staged
+
+*** git diff  → comparar cambios.
+            --cached → mirar lo que ya está en staging.
+            --stat → mostrar solamente estadísticas/resumen.
+
+
+
+
+como se ediaria ejemplo
+
+        Editar archivo
+     ↓
+git diff              ← ¿qué cambié?
+     ↓
+git add
+     ↓
+git diff --cached     ← ¿qué voy a guardar?
+     ↓
+git commit
+     ↓
+git push
+
+El + en git diff significa:
+Esta línea existe en tu versión actual, pero no existía en la versión anterior que Git está comparando.
+
+Y el otro símbolo importante es:
+- línea eliminada
++ línea agregada
+
+
+U  = Untracked
+M  = Modified
+staged = Changes to be committed
 
 
 
